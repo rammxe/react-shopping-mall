@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  background: #f8f9fa;
+}
+
+/* ============ 카드 목록 컨테이너 ============ */
+ul {
+  list-style: none;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #8b7355 !important;
+  text-decoration: none !important;
+}
+
+/* 네비바 배경색 */
+.navbar.bg-primary {
+  background-color: #c79d6a !important; /* 수건 쇼핑몰 색상 */
+}
+
+/* 브랜드(SHOPPING) 스타일 */
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-brand:hover {
+  color: #faf8f5 !important;
+}
+
+/* 네비 링크 기본 스타일 */
+.navbar-nav .nav-link {
+  color: white !important;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #faf8f5 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* 회원가입/로그인 왼쪽에 여백 추가 */
+.auth-links {
+  margin-left: auto !important;
+  padding-left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ============ 개별 카드 (li) ============ */
+.cardItem {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.cardItem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* 카드 이미지 */
+.cardItem img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cardItem:hover img {
+  transform: scale(1.05);
+}
+
+/* 카드 제목 */
+.cardItem h4 {
+  padding: 16px 20px 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  color: #222;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+}
+
+/* 할인 정보 */
+.info1 {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sale {
+  color: #ff4757;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.info1 span:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* 가격 정보 */
+.info2 {
+  padding: 5px 20px 20px;
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+/* ============ Diffuser 섹션 ============ */
+.diffuser-section {
+  position: relative;
+}
+
+.diffuser-section > img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.diffuser-section h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 8px;
+  margin: 0;
+}
+
+/* ============ Candle 섹션 ============ */
+.candle-section h3 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  padding: 60px 0 20px;
+  letter-spacing: 4px;
+}
+
+/* ================= EVENT PAGE ================= */
+
+.event-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+}
+
+/* 상단 히어로 배너 */
+
+.event-top-banner {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+.event-top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 탭 영역 */
+
+.event-tabs {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.event-tabs .nav-link {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  margin: 0 8px;
+  font-weight: 600;
+  background: #f3f3f3;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.event-tabs .nav-link:hover {
+  background: #e8e3dc;
+}
+
+.event-tabs .nav-link.active {
+  background: #c79d6a;
+  color: white;
+}
+
+/* 이벤트 콘텐츠 */
+
+.event-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* 이벤트 카드 */
+
+.event-card {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s;
+}
+
+.event-card img {
+  width: 100%;
+  display: block;
+}
+
+/* hover 효과 */
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ Detail 페이지 ============ */
+.detail-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.detail-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.detail-container img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.detail-container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #333;
+}
+
+.detail-container .sale {
+  font-size: 28px;
+  color: #ff4757;
+  font-weight: 700;
+}
+
+.detail-container .price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin: 10px 0;
+}
+
+.detail-container .original-price {
+  font-size: 18px;
+  color: #999;
+  text-decoration: line-through;
+  margin: 10px 0;
+}
+
+/* ============ 반응형: 태블릿 ============ */
+@media (max-width: 1024px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  .cardItem h4 {
+    font-size: 14px;
+    height: 65px;
+  }
+
+  .diffuser-section h3 {
+    font-size: 48px;
+  }
+
+  .candle-section h3 {
+    font-size: 40px;
+  }
+}
+
+/* ============ 반응형: 모바일 ============ */
+@media (max-width: 768px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .cardItem img {
+    height: 200px;
+  }
+
+  .cardItem h4 {
+    font-size: 13px;
+    height: 60px;
+    padding: 12px 15px 6px;
+  }
+
+  .info1 {
+    padding: 6px 15px;
+  }
+
+  .sale {
+    font-size: 16px;
+  }
+
+  .info1 span:last-child {
+    font-size: 16px;
+  }
+
+  .info2 {
+    font-size: 12px;
+    padding: 4px 15px 15px;
+  }
+
+  .diffuser-section > img {
+    height: 400px;
+  }
+
+  .diffuser-section h3 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  .candle-section h3 {
+    font-size: 32px;
+    padding: 40px 0 15px;
+  }
+
+  .event-banner img {
+    height: 300px;
+  }
+
+  .custom-tabs .nav-link {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .tab-img {
+    max-width: 100%;
+  }
+
+  .detail-container {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  .detail-container h2 {
+    font-size: 24px;
+  }
+
+  .detail-container h3 {
+    font-size: 20px;
+  }
+}
+
+/* ============ 스크롤바 스타일 ============ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

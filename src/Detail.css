@@ -1,0 +1,209 @@
+/* 전체 래퍼 */
+.detail-wrapper {
+  padding: 50px 0;
+}
+
+.detail-container {
+  max-width: 1200px;
+}
+
+/* 이미지 박스 */
+.detail-img-box {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #E5DDD5;
+}
+
+.detail-img-box img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.detail-img-box img:hover {
+  transform: scale(1.05);
+}
+
+/* 상품 정보 */
+.detail-info {
+  padding-left: 30px;
+}
+
+.detail-info h2 {
+  color: #6B5B4D;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 가격 박스 */
+.detail-price-box {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E5DDD5;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sale-badge {
+  background-color: #f05c57ff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.current-price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #6B5B4D;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+/* 상품 설명 */
+.detail-description {
+  margin-bottom: 30px;
+}
+
+.detail-description h4 {
+  color: #6B5B4D;
+  margin-bottom: 15px;
+}
+
+.detail-description p {
+  color: #8B7355;
+  line-height: 1.6;
+}
+
+/* 수량 선택 박스 */
+.quantity-box {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #FAF8F5;
+  border-radius: 8px;
+  border: 1px solid #E5DDD5;
+}
+
+.quantity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quantity-label {
+  color: #6B5B4D;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.qty-btn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #E5DDD5;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6B5B4D;
+  transition: all 0.2s;
+}
+
+.qty-btn:hover {
+  background-color: #FAF8F5;
+  border-color: #8B7355;
+}
+
+.qty-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6B5B4D;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* 총 금액 */
+.total-price-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #E5DDD5;
+}
+
+.total-label {
+  color: #6B5B4D;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8B7355;
+}
+
+/* 버튼 */
+.detail-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-btn {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #8B7355;
+  background-color: white;
+  color: #8B7355;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.cart-btn:hover {
+  background-color: #FAF8F5;
+}
+
+.buy-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background-color: #8B7355;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #6f5a43;
+}
+
+/* 상품 없을 때 */
+.product-not-found {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.product-not-found h3 {
+  color: #6B5B4D;
+  margin-bottom: 30px;
+}

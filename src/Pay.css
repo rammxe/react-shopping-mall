@@ -1,0 +1,75 @@
+/* Pay 컴포넌트 전용 클래스 */
+.pay-container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #b39e89;
+}
+
+.pay-title {
+  color: #6b5b4d;
+  margin-bottom: 20px;
+}
+
+.pay-description {
+  color: #8b7355;
+  margin-bottom: 30px;
+}
+
+.pay-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pay-btn-login {
+  padding: 15px;
+  background-color: #8b7355;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pay-btn-login:hover {
+  background-color: #6f5a43;
+}
+
+.pay-btn-signup {
+  padding: 15px;
+  background-color: white;
+  color: #8b7355;
+  border: 1px solid #8b7355;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pay-btn-signup:hover {
+  background-color: #faf8f5;
+}
+/* 
+
+
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+const Pay = () => {
+  const navigate = useNavigate(); // 🔥 useNavigate() 함수를 실행해서 navigate 변수에 담음!
+
+  return (
+    <div>
+      <h4>로그인</h4>
+      <p>아이디와 비밀번호를 입력해주세요</p>
+      <button onClick={() => navigate("/login")}>기존회원 로그인</button>
+      <button onClick={() => navigate("/signup")}>회원가입</button>
+    </div>
+  );
+};
+
+export default Pay;
+
+*/
