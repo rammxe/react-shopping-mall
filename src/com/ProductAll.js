@@ -1,11 +1,11 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "./style.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './style.css';
 
 const ProductAll = ({ data, Card }) => {
   return (
@@ -22,7 +22,7 @@ const ProductAll = ({ data, Card }) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="swiper"
+        className="main-swiper"
       >
         <SwiperSlide>
           <img
