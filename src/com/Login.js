@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { auth } from "./firebase";
-import { signInWithEmailAndPassword } from "firebase/auth"; // ✅ 이미 import 됨
+import { signInWithEmailAndPassword } from "firebase/auth"; 
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
